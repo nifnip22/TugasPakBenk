@@ -19,14 +19,14 @@
     {{-- <x-guest-layout> --}}
     <div class="auth-layout relative z-1 w-full h-full flex flex-col justify-center items-center backdrop-blur-3xl">
         <section class="absolute z-2 top-0 left-0 flex justify-center items-start w-full h-full"  id="image-container">
-            <img class="relative -top-[18svh] scale-50" src="{{ asset('assets/images/auth/book2.png') }}" alt="">
+            <img class="absolute z-1 -top-[0.5rem] ml-[4rem] w-[15rem] __floatAnimation" style="transform: rotate(15deg)" src="{{ asset('assets/images/auth/note3.png') }}" alt="">
         </section>
-        <div class="relative z-1 bg-white/60 shadow-slate-500/10 shadow-xl rounded-2xl w-full md:w-[40%] px-8 py-12 mx-4 backdrop-blur-sm">
-            <img class="absolute -bottom-[9rem] -left-12 z-3 w-60 scale-90 md:scale-100" src="{{ asset('assets/images/auth/book3.png') }}" alt="">
+        <div class="relative z-1 bg-white/80 shadow-slate-500/10 shadow-xl rounded-2xl w-full md:w-[40%] px-8 py-12 mx-4 backdrop-blur-sm">
+            <img class="absolute z-3 -bottom-[9rem] -left-12 z-3 w-60 md:scale-100 __floatAnimation" src="{{ asset('assets/images/auth/book3.png') }}" alt="">
 
             <x-auth-session-status class="mb-4" :status="session('status')" />
         
-            <form method="POST" action="{{ route('login') }}">
+            <form class="relative z-2" method="POST" action="{{ route('login') }}">
                 @csrf
         
                 <!-- Email Address -->
@@ -35,7 +35,7 @@
                     <x-text-input 
                     id="email" 
                     class="relative mt-1 w-full shadow-inner bg-slate-50/30 border-slate-300/10 border-b-2 
-                    focus:ring-0 focus:outline-none focus:border-b-4 focus:border-green-500/60 focus:z-10 
+                    focus:ring-0 focus:outline-none focus:border-b-4 focus:border-lime-500 focus:z-10 
                     valid:border-green-500/30 valid:border-b-4 valid:bg-transparent valid:text-black
                     shadow-slate-500/20 outline-none border-t-0 border-l-0 border-r-0 transition-all duration-300 ease-in-out" 
                     type="text" 
@@ -51,7 +51,7 @@
                     <x-text-input 
                     id="password" 
                     class="relative mt-1 w-full shadow-inner bg-slate-50/30 border-slate-300/10 border-b-2 
-                    focus:ring-0 focus:outline-none focus:border-b-4 focus:border-green-500/60 focus:z-10 
+                    focus:ring-0 focus:outline-none focus:border-b-4 focus:border-lime-500 focus:z-10 
                     valid:border-green-500/30 valid:border-b-4 valid:bg-transparent valid:text-black
                     shadow-slate-500/20 outline-none border-t-0 border-l-0 border-r-0 transition-all duration-300 ease-in-out" 
                     style="outline: none ;"
@@ -75,11 +75,7 @@
                 </div>
         
                 <div class="flex items-center justify-end mt-8">
-                    @if (Route::has('password.request'))
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                            {{ __('Lupa sandi anda?') }}
-                        </a>
-                    @endif
+                    
         
                     <x-primary-button 
                     class="ml-4 btn btn-sm h-0 w-26 px-8  bg-green-500 shadow-inner shadow-emerald-300 hover:scale-105 
