@@ -1,0 +1,51 @@
+.auth-layout{
+    
+}
+
+.shape-container{
+    overflow: clip;
+    > div{
+        position: absolute;
+    }
+
+    .circle-container{
+        top: 0;
+        left: 0;
+        width: 100svw;
+        height: 100svh;
+        > div {
+            border-radius: 100%;
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+        }
+        div{
+            &:nth-child(1){
+                top: 0;
+                left: 0;
+                background: linear-gradient(to bottom, green, transparent, transparent);
+                transform: scale(2);
+            }
+            &:nth-child(2){
+                bottom: -1rem;
+                right: 2rem;
+                background: linear-gradient(to top, rgba(150, 238, 83, 0.6), rgba(1, 140, 63, 0.50));
+                transform: scale(3);
+            }
+            &:nth-child(3){
+                bottom: 9.7rem;
+                left: 30vw;
+                background: linear-gradient(to left, lime, transparent, transparent);
+                transform: scale(2) rotate(80deg);
+            }
+        }
+    }
+
+    .rotated-rect{
+        right:4rem;
+        width: 80svw;
+        height: 2rem;
+        background: linear-gradient(to right, rgb(91, 250, 213), rgb(62, 235, 143), rgb(59, 194, 122));
+        transform: rotate(20deg);
+    }
+}
