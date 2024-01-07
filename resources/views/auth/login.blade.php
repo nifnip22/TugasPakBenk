@@ -38,13 +38,16 @@
 
     <!-- Remember Me -->
     <div class="block mt-4">
-        {{-- <label for="remember_me" class="inline-flex items-center">
-            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-            <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-        </label> --}}
+        Apakah anda 
+        @if (Route::has('register'))
+            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">
+                {{ __('belum register?') }}
+            </a>
+        @endif 
+        atau 
         @if (Route::has('password.request'))
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                {{ __('Lupa sandi anda?') }}
+                {{ __('lupa sandi anda?') }}
             </a>
         @endif
     </div>
@@ -62,3 +65,8 @@
     </div>
 </form>
 @include('auth.partials._footer')
+
+{{-- <label for="remember_me" class="inline-flex items-center">
+            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
+            <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+        </label> --}}
