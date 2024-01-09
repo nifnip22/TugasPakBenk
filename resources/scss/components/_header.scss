@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pangolin&display=swap');
+header{
+    height: 100vh;
+    .sidebar{
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height: 100vh;
+        // background-color: rgba(0, 0, 128, 0.266);
+        pointer-events: none;
+        nav{
+            box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+            height: 100%;
+            width: 15rem;
+            pointer-events: all;
+            background-color: #f1e3a8;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -1.3rem;
+            transform: scale();
+            
+            #shapes{
+                position: absolute;
+                z-index: 3;
+                top: 0;
+                left: 0;
+                // background-color: purple;
+                width: 3rem;
+                height: 100%;
+
+                #line{
+                    position: absolute;
+                    
+                    right: 0;
+                    height: 100%;
+                    width: 0.4rem;
+                    background-color: #da251d;
+                }
+
+                #circle{
+                    position: relative;
+                    height: 100%;
+                }
+            }
+            #navigation{
+                $lineColor:#5f5005;
+                position: relative;
+                top: 0;
+                padding-top: 0.5rem;
+                left: 3.2rem;
+                hr{
+                    position: relative;
+                    left: -3.2rem;
+                    border-bottom: 3px solid $lineColor;
+                    margin-top: 1rem;
+                }
+                #nav-btn{
+                    // background-color: black;
+                    position: relative;
+                    left: -3.2rem;
+                    z-index: 2;
+                    ul{    
+                        padding: 0 4px;                    
+                        li{
+                            width: 100%;
+                            border-bottom: 2.2px solid $lineColor;
+                            // border-bottom: 2.2px solid #4299e1;
+                            font-family: 'Kalam', sans-serif;
+                            font-weight: 500;
+                            font-size: 1.4rem;
+                            color: rgb(158, 60, 7);
+                            div{
+                                // padding-left: ;
+                                padding: 8px 0 0 3.2rem;
+                                height: 2rem;
+                                // background-color: red;
+                                width: 110%;
+                                a{
+                                    // background-color: blue;
+                                    width: 100%;
+                                    &:hover{
+                                        font-family: 'Pangolin', sans-serif;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
