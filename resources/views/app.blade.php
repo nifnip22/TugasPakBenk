@@ -8,7 +8,7 @@
         @vite(['resources/css/app.css', 'resources/scss/app.scss'])
     </head>
     <body>
-        <header>
+        <header class="hidden md:block">
             <div class="sidebar">
                 <nav>
                     <div id="shapes">
@@ -60,10 +60,48 @@
             </div>
         </header>
         <section class="content">
-            <div class="wrapper bg-red-500 h-full w-full">
-                <div class="contaienr px-4 py-12">
-                    <div class="grid grid-cols-1">
-                        <div class="bg-white w-full h-40"></div>
+            <div class="wrapper h-full w-full">
+                <div class="container px-4 py-12">
+                    <div class="grid grid-cols-1 w-full">
+                        <div class="w-full h-auto rounded-xl drop-shadow-sm flex py-4 justify-around flex-wrap gap-4">
+                            <div class="sticker-hanger drop-shadow-md -top-0 w-12 h-full md:w-full md:h-10 rounded-lg absolute"></div>
+                            <div class="w-[15rem] h-[13rem] bg-yellow-400 shadow-md drop-shadow-xl shadow-slate-500/10 rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out p-2">
+                                <div id="guru-terajin" class="px-2">
+                                    <h1>Guru Terajin</h1>
+                                    <hr class="rotate-1">
+                                </div>
+                                <div id="sticker-content">
+                                    Bammbang Wicaksono
+                                </div>
+                            </div>
+                            <div class="w-[15rem] h-[13rem] bg-yellow-400 shadow-md drop-shadow-xl shadow-slate-500/10 rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out p-2">
+                                <div id="guru-terajin" class="px-2">
+                                    <h1>Guru Terajin</h1>
+                                    <hr class="rotate-1">
+                                </div>
+                                <div id="sticker-content">
+                                    Bammbang Wicaksono
+                                </div>
+                            </div>
+                            <div class="w-[15rem] h-[13rem] bg-yellow-400 shadow-md drop-shadow-xl shadow-slate-500/10 rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out p-2">
+                                <div id="guru-terajin" class="px-2">
+                                    <h1>Guru Terajin</h1>
+                                    <hr class="rotate-1">
+                                </div>
+                                <div id="sticker-content">
+                                    Bammbang Wicaksono
+                                </div>
+                            </div>
+                            <div class="w-[15rem] h-[13rem] bg-yellow-400 shadow-md drop-shadow-xl shadow-slate-500/10 rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out p-2">
+                                <div id="guru-terajin" class="px-2">
+                                    <h1>Guru Terajin</h1>
+                                    <hr class="rotate-1">
+                                </div>
+                                <div id="sticker-content">
+                                    Bammbang Wicaksono
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

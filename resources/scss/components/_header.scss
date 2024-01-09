@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pangolin&display=swap');
+
+$lineColor:#70600d;
+// $lineColor:#5f5005;
 header{
     height: 100vh;
     .sidebar{
+        overflow-y: clip;
+        contain: paint;
         z-index: 999;
         position: fixed;
         top: 0;
@@ -46,7 +50,7 @@ header{
                 }
             }
             #navigation{
-                $lineColor:#5f5005;
+                
                 position: relative;
                 top: 0;
                 padding-top: 0.5rem;
@@ -74,14 +78,17 @@ header{
                             color: rgb(158, 60, 7);
                             div{
                                 // padding-left: ;
-                                padding: 8px 0 0 3.2rem;
-                                height: 2rem;
+                                padding: 1.4rem 0 0 3.2rem;
+                                height: 3rem;
                                 // background-color: red;
                                 width: 110%;
                                 a{
-                                    // background-color: blue;
+                                    // background-color: rgba(0, 0, 255, 0.268);
+                                    padding: 0.4rem 0;
+                                    margin-left: 0.5rem;
                                     width: 100%;
                                     &:hover{
+                                        padding: 0.7rem 0;
                                         font-family: 'Pangolin', sans-serif;
                                         font-weight: 700;
                                     }
