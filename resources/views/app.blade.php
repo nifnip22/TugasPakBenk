@@ -110,7 +110,7 @@
         <section class="content mt-[3.4rem] md:mt-0">
             <div class="wrapper flex flex-col items-center justify-start h-full w-full">
                 <div class="container px-4 py-12">
-                    <div class="grid grid-cols-1 w-full">
+                    <div class="grid grid-cols-1 w-full my-4">
                         <div class="w-full h-auto rounded-xl drop-shadow-sm flex py-4 justify-around flex-wrap gap-4">
                             {{-- <div class="sticker-hanger drop-shadow-md -top-0 w-12 h-full md:w-full md:h-8 rounded-lg absolute"></div> --}}
                             <div class="md:w-[15rem] w-[10rem] md:h-[13rem] h-[10rem] bg-yellow-300 shadow-md drop-shadow-xl shadow-slate-500/10 rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 ease-in-out p-2">
@@ -170,6 +170,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="table" class="w-full h-[90vh] rounded-lg border-y-[1.7rem] border-green-700 my-4 grid grid-cols-3 grid-rows-2 gap-4 px-4">
+                        <div class="bg-white h-full w-full col-span-2 row-span-2"></div>
+                        <div class="bg-white h-full w-full col-span-1 row-span-1"></div>
+                        <div class="bg-white h-full w-full col-span-1 row-span-1"></div>
                     </div>
                 </div>
             </div>
