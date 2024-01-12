@@ -1,17 +1,24 @@
 
-$lineColor:#70600d;
-// $lineColor:#5f5005;
+$lineColor: rgb(9, 60, 90);
+// $lineColor:#70600d;
+
 header{
     height: 100vh;
+    #navbar{
+        background-color: #3db06f;
+        // background-color: rgb(9, 60, 90);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        
+    }
     .sidebar{
         overflow-y: clip;
         contain: paint;
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20rem;
+        z-index: 98;
+        // position: fixed;
+        // top: 0;
+        // left: 0;
         height: 100vh;
+        width: 100vw;
         // background-color: rgba(0, 0, 128, 0.266);
         pointer-events: none;
         nav{
@@ -20,7 +27,10 @@ header{
             height: 100%;
             width: 15rem;
             pointer-events: all;
-            background-color: #f1e3a8;
+            // background-color: rgb(236, 248, 244);
+            // background-color: #d8ebe0;
+            background-color: #d8efe2;
+            // background-color: #e3f7eb;
             background-repeat: no-repeat;
             background-size: cover;
             background-position-x: -1.3rem;
@@ -41,7 +51,8 @@ header{
                     right: 0;
                     height: 100%;
                     width: 0.4rem;
-                    background-color: #da251d;
+                    background-color: rgb(3, 96, 3);
+                    // background-color: #da251d;
                 }
 
                 #circle{
@@ -70,21 +81,30 @@ header{
                         padding: 0 4px;                    
                         li{
                             width: 100%;
+                            // background-color: red;
+                            display: flex;
+                            
                             border-bottom: 2.2px solid $lineColor;
                             // border-bottom: 2.2px solid #4299e1;
                             font-family: 'Kalam', sans-serif;
                             font-weight: 500;
                             font-size: 1.4rem;
-                            color: rgb(158, 60, 7);
+                            color: rgb(18, 22, 67);
                             div{
                                 // padding-left: ;
                                 padding: 1.4rem 0 0 3.2rem;
                                 height: 3rem;
                                 // background-color: red;
                                 width: 110%;
+                                #nav-pin{
+                                    position: relative;
+                                    top: -4rem;
+                                    left: 6.8rem;
+                                    transform: rotate(13deg);
+                                }
                                 a{
                                     // background-color: rgba(0, 0, 255, 0.268);
-                                    padding: 0.4rem 0;
+                                    padding: 0.4rem 0;  
                                     margin-left: 0.5rem;
                                     width: 100%;
                                     &:hover{
@@ -101,3 +121,4 @@ header{
         }
     }
 }
+@media screen and (max-width: 767px) {}
