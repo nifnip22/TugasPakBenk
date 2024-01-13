@@ -1,0 +1,124 @@
+
+$lineColor: rgb(9, 60, 90);
+// $lineColor:#70600d;
+
+header{
+    height: 100vh;
+    #navbar{
+        background-color: #3db06f;
+        // background-color: rgb(9, 60, 90);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        
+    }
+    .sidebar{
+        overflow-y: clip;
+        contain: paint;
+        z-index: 98;
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        height: 100vh;
+        width: 100vw;
+        // background-color: rgba(0, 0, 128, 0.266);
+        pointer-events: none;
+        nav{
+            box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+            height: 100%;
+            width: 15rem;
+            pointer-events: all;
+            // background-color: rgb(236, 248, 244);
+            // background-color: #d8ebe0;
+            background-color: #d8efe2;
+            // background-color: #e3f7eb;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: -1.3rem;
+            transform: scale();
+            
+            #shapes{
+                position: absolute;
+                z-index: 3;
+                top: 0;
+                left: 0;
+                // background-color: purple;
+                width: 3rem;
+                height: 100%;
+
+                #line{
+                    position: absolute;
+                    
+                    right: 0;
+                    height: 100%;
+                    width: 0.4rem;
+                    background-color: rgb(3, 96, 3);
+                    // background-color: #da251d;
+                }
+
+                #circle{
+                    position: relative;
+                    height: 100%;
+                }
+            }
+            #navigation{
+                
+                position: relative;
+                top: 0;
+                padding-top: 0.5rem;
+                left: 3.2rem;
+                hr{
+                    position: relative;
+                    left: -3.2rem;
+                    border-bottom: 3px solid $lineColor;
+                    margin-top: 1rem;
+                }
+                #nav-btn{
+                    // background-color: black;
+                    position: relative;
+                    left: -3.2rem;
+                    z-index: 2;
+                    ul{    
+                        padding: 0 4px;                    
+                        li{
+                            width: 100%;
+                            // background-color: red;
+                            display: flex;
+                            
+                            border-bottom: 2.2px solid $lineColor;
+                            // border-bottom: 2.2px solid #4299e1;
+                            font-family: 'Kalam', sans-serif;
+                            font-weight: 500;
+                            font-size: 1.4rem;
+                            color: rgb(18, 22, 67);
+                            div{
+                                // padding-left: ;
+                                padding: 1.4rem 0 0 3.2rem;
+                                height: 3rem;
+                                // background-color: red;
+                                width: 110%;
+                                #nav-pin{
+                                    position: relative;
+                                    top: -4rem;
+                                    left: 6.8rem;
+                                    transform: rotate(13deg);
+                                }
+                                a{
+                                    // background-color: rgba(0, 0, 255, 0.268);
+                                    padding: 0.4rem 0;  
+                                    margin-left: 0.5rem;
+                                    width: 100%;
+                                    &:hover{
+                                        padding: 0.7rem 0;
+                                        font-family: 'Pangolin', sans-serif;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {}

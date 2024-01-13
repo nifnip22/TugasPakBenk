@@ -1,13 +1,12 @@
-
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('assets/scss/auth.scss') }}">
+    @vite(['resources/scss/auth.scss', 'resources/css/app.css'])
 </head>
-<body class="bg-blue-50">
+<body class="bg-blue-50 h-[100svh] overflow-clip">
     <section class="shape-container w-full h-full absolute top-0 left-0 1z-1">
         <div class="rotated-rect"></div>
         <div class="circle-container">

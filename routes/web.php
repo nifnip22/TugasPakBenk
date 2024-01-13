@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/app', function () {
-    return view('app');
+// Route::get('/app', function () {
+//     return view('app');
+// });
+
+Route::get('/app', [MainController::class, 'index'])->name('SKADA-JURNAL');
+
+Route::get('/main', function (){
+    return view('pages.main.main');
 });
 
 Route::get('/dashboard', function () {
