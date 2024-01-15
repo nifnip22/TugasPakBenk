@@ -146,8 +146,8 @@
                                         <span class="text-base font-medium text-blue-900">XII MM</span>
                                         <span class="text-sm font-medium text-blue-900">20%</span>
                                     </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-1 md:h-2.5 dark:bg-gray-700">
-                                        <div class="bg-blue-600 h-1 md:h-2.5 rounded-full" style="width: 20%"></div>
+                                    <div class="w-full border-[2px] border-black h-1 md:h-6 overflow-clip p-[1px]" style="">
+                                        <div class="h-full" style="width: 100%; background-image: url('{{ asset('assets/images/others/scribble.png') }}'); background-size: 100% 100%; filter: brightness(0.2) saturate(150%);"></div>
                                     </div>
                                 </div>
                             </div>
@@ -171,10 +171,14 @@
                             </div>
                         </div>
                     </div>
-                    <div id="table" class="w-full h-[90vh] rounded-lg border-y-[1.7rem] border-green-700 my-4 grid grid-cols-3 grid-rows-2 gap-4 px-4">
-                        <div class="bg-white h-full w-full col-span-2 row-span-2"></div>
-                        <div class="bg-white h-full w-full col-span-1 row-span-1"></div>
-                        <div class="bg-white h-full w-full col-span-1 row-span-1"></div>
+                    <div class="px-0  md:px-16 w-full ">
+                        <div id="table" class="w-full h-[90vh] rounded-lg border-y-[1rem] border-green-500 my-4 grid grid-cols-1 md:grid-cols-3 grid-rows-1 md:grid-rows-2 gap-4 ">
+                            <div class="bg-white h-full w-full col-span-2 row-span-2">
+                                
+                            </div>
+                            <div class="bg-white h-full w-full col-span-1 row-span-1"></div>
+                            <div class="bg-white h-full w-full col-span-1 row-span-1"></div>
+                        </div>
                     </div>
                 </div>
             </div>
