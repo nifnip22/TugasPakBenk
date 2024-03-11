@@ -1,7 +1,9 @@
 <?php
-
+// CONTROLLERS
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\absenController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +25,7 @@ Route::get('/', function () {
 // });
 
 Route::get('/app', [MainController::class, 'index'])->name('SKADA-JURNAL');
+Route::get('/absensi', [absenController::class, 'index'])->name('SKADA-JURNAL');
 
 Route::get('/main', function (){
     return view('pages.main.main');
