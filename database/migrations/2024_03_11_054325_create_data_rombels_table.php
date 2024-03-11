@@ -11,15 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('data_rombels', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->enum('level', ['Admin', 'Moderator', 'BK', 'Manager_Kelas']);
-            $table->rememberToken();
+            $table->string('nama_rombel');
+            $table->unsignedBigInteger('tahun_pelajaran_id');
             $table->timestamps();
+
+            $table->foreign('tahun_pelajaran_id')->references('id')->on('data_tahun_pelajarans')->onDelete('cascade');
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('data_rombels');
     }
 };
